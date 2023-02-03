@@ -4,7 +4,7 @@
 # chemistry exam using random number generator using python.
 #
 # Since there is less no of people in this email list, I'll generate
-# 300 students name by mixing our first name and last name randomly
+# 200 students name by mixing our first name and last name randomly
 #  
 # So, at the end I should produce a text file with columns
 # first name, last name, maths, phy, chem, bio
