@@ -61,8 +61,12 @@ plt.savefig(pp,format='pdf')
 
 # ========    CONTINUE WITH THE TRAINING ====================================
 
-# Split the label column as y, and the input variables as X
-X, y = projdf.values[:,:-1], projdf.values[:,-1]
+# Save the label column as y, and the input variables as X
+#(X and y are numpy arrays)
+
+X = projdf[['tof','height','distance']].values
+y = projdf[['velocity']].values
+
 print(f'Shapes of data, X, y are {projdf.shape}, {X.shape} , {y.shape}')
 
 n_features = X.shape[1]
@@ -122,8 +126,10 @@ plt.savefig(pp,format='pdf')
 
 projdf_test = pd.read_csv('projectile_input_test_10.txt',sep=' ',index_col=None,usecols=cols,names=col_names)
 
+
 # Then separate the variables and the result columns
-X_test, y_true = projdf_test.values[:,:-1], projdf_test.values[:,-1]
+X_test = projdf_test[['tof','height','distance']].values
+y_true = projdf_test[['velocity']].values
 
 # Make the prediction
 pred_y = model.predict(X_test)
@@ -134,7 +140,7 @@ pred_y = model.predict(X_test)
 # Arrange them back in a nice dataframe
 
 results = pd.DataFrame()
-results['y_true'] = y_true
+results['y_true'] = y_true.ravel()
 results['y_pred'] = pred_y
 
 
