@@ -6,6 +6,16 @@ Course Website: https://alaha999.github.io/
 
 Course Modules: https://alaha999.github.io/modules/
 
+### Installing packages
+We need ```python```,```numpy```,```matplotlib```,```tensorflow```,```keras```, and ```scikit-learn``` for this course.
+- How to install scikit-learn: [install scikit-learn](https://scikit-learn.org/stable/install.html#installing-the-latest-release)
+- How to install tensorflow: [install_tf_documentation](https://www.tensorflow.org/install), [pypi_pip](https://pypi.org/project/tensorflow/), [how-to-install-python-tensorflow-in-windows](https://www.geeksforgeeks.org/how-to-install-python-tensorflow-in-windows/)
+- How to install Keras: [install keras](https://pypi.org/project/keras/)
+
+NB: Please make sure you have these libraries **working** in your system. If not, make sure you come to wednesday's tutorial session and we will help you with the installation! But this comes with a free joke,
+
+![](https://i.pinimg.com/474x/8c/81/cd/8c81cd6b6744c99f04c07c6fb2616304.jpg)
+
 
 ### Week 1
 - Date: Feb 3, 2023
