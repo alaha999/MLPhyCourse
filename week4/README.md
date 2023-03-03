@@ -6,6 +6,12 @@ We have prepared two assignments on the advanced classification task based on re
 
 Both are based on toy data made by us.
 
+**Google drive location of the input files:**
+- https://drive.google.com/drive/folders/1bOy5lNGxAZvgIVM_putjvewGULgaIDut?usp=share_link
+
+
+
+
 ### Assignment 1
  - Input files: input_WZ.txt, input_ZZ.txt
  - hep_classify_plot_variables.py
